@@ -1,0 +1,18 @@
+# Example tfvars for TNGS-LZ-DEV
+
+prefix = "tngs-lz-dev"
+location = "westeurope"
+
+subscription_id = "" # leave empty to use ARM_SUBSCRIPTION_ID
+
+tags = {
+  environment = "dev"
+  project     = "alz-lz"
+}
+
+environment = "dev"
+landing_zone_name = "tngs-lz-dev"
+management_resource_group = "rg-tngs-lz-mgmt"
+log_analytics_workspace_name = "law-tngs-lz"
+enable_monitoring = true
+address_space = ["10.10.0.0/16"]
